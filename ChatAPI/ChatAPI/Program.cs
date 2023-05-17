@@ -38,14 +38,16 @@ app.UseCors("AllowAnyHeaders");
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     endpoints.MapHub<MyHub>("/toastr");
 });
-
-app.MapControllers();
 
 app.Run();
