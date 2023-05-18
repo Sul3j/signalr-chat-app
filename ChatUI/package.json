@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.2.0",
+    "@angular/animations": "^15.2.9",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
@@ -20,8 +20,10 @@
     "@angular/router": "^15.2.0",
     "@aspnet/signalr": "^1.0.27",
     "rxjs": "~7.8.0",
+    "toastr": "^2.1.4",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0"
+    "zone.js": "~0.12.0",
+    "ngx-toastr": "^16.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.2",
