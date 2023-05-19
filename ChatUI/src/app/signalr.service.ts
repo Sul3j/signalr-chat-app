@@ -28,10 +28,10 @@ export class SignalrService {
       .catch(err => console.log('Error while starting connection: ' + err));
   }
 
-  askServer() {
+  async askServer() {
     console.log("askServerStart");
 
-    this.hubConnection.invoke("askServer", "hey")
+    await this.hubConnection.invoke("askServer", "hey")
       .then(() => {
         console.log("askServer.then");
       })
